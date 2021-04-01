@@ -18,6 +18,9 @@ struct ContentView: View {
         ZStack {
             bgColor
                 .edgesIgnoringSafeArea(.all)
+            Button("Logout") {
+                self.bgColor = .red
+            }
         }
         .onAppear(perform: authenticate)
         
